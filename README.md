@@ -169,8 +169,8 @@ npm -v    # Should output 9.x or 10.x
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/mdzarif55/trans-tram-ltd.git
-cd trans-tram-ltd
+git clone https://github.com/mdzarif55/trans-team-ltd.git
+cd trans-team-ltd
 ```
 
 ### 2. Install Dependencies
