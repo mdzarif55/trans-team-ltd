@@ -121,10 +121,6 @@ export const mainNavigation: NavItem[] = [
     title: "Gallery",
     href: "/gallery"
   },
-  // {
-  //   title: "News & Events",
-  //   href: "/news"
-  // },
   {
     title: "Our Concerns",
     href: "/concerns"

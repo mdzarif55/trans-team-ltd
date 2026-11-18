@@ -8,7 +8,7 @@ export default function FeaturedProjects() {
   const featured = projectsData.slice(0, 3);
 
   return (
-    <section className="py-20 md:py-28 bg-white" id="projects">
+    <section className="py-20 md:py-10 bg-white" id="projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Proven Portfolio"

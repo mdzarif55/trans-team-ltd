@@ -64,7 +64,6 @@ Every required section is implemented as a dedicated, fully responsive route:
 | `/projects/[slug]` | **Project Case File** | Deep-dive technical sheets detailing tonnage, route, client, and scope of work. |
 | `/case-studies` | **Case Studies** | In-depth engineering studies, including the **Khulna 150MW Power Plant** logistics (343T turbine, 233T generator, 600T temporary river jetty). |
 | `/gallery` | **Operations Gallery** | High-resolution photography of ground handling, barging, lifting, and aircraft cargo. |
-| `/news` | **News & Events** | Company announcements, industry recognitions, and tournament freight logistics. |
 | `/concerns` | **Our Concerns** | Directory of the 8 sister concerns operating under the RMK Group umbrella. |
 | `/policies` | **Corporate Policies** | Health, Safety & Environment (HSE), Quality Management, CSR, and Business Ethics. |
 | `/contact` | **Contact & RFQ** | Multi-field freight quotation form with validation, office addresses, and direct phone lines. |
@@ -126,7 +125,6 @@ trans-team-ltd/
 │   │   ├── projects/             # Projects, ongoing, accomplished & [slug]
 │   │   ├── case-studies/         # Case studies & technical write-ups
 │   │   ├── gallery/page.tsx      # Image Gallery
-│   │   ├── news/                 # News articles & [slug] dynamic pages
 │   │   ├── concerns/page.tsx     # RMK Group sister concerns
 │   │   ├── contact/page.tsx      # Interactive RFQ & Contact page
 │   │   ├── policies/page.tsx     # Corporate Policies
@@ -146,7 +144,6 @@ trans-team-ltd/
 │       ├── projects.ts           # Project catalog and specifications
 │       ├── caseStudies.ts        # In-depth Khulna Power Plant case studies
 │       ├── team.ts               # Management board and staff details
-│       ├── news.ts               # News articles and announcements
 │       ├── concerns.ts           # RMK Group 8 sister concerns
 │       └── policies.ts           # HSE, Quality, CSR, and Business Conduct
 │

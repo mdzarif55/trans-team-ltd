@@ -2,7 +2,6 @@ import { MetadataRoute } from "next";
 import { servicesData } from "@/data/services";
 import { projectsData } from "@/data/projects";
 import { caseStudiesData } from "@/data/caseStudies";
-import { newsArticles } from "@/data/news";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://ttlrmk.com";
@@ -19,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/accomplished",
     "/case-studies",
     "/gallery",
-    "/news",
     "/concerns",
     "/policies",
     "/contact",
@@ -52,18 +50,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const newsPages = newsArticles.map((n) => ({
-    url: `${baseUrl}/news/${n.slug}`,
-    lastModified: new Date(n.date),
-    changeFrequency: "never" as const,
-    priority: 0.7,
-  }));
-
   return [
     ...staticPages,
     ...servicePages,
     ...projectPages,
-    ...caseStudyPages,
-    ...newsPages
+    ...caseStudyPages
   ];
 }

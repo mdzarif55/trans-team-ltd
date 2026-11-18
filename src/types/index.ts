@@ -59,19 +59,6 @@ export interface TeamMember {
   bio?: string;
 }
 
-export interface NewsItem {
-  id: string;
-  slug: string;
-  title: string;
-  date: string;
-  category: string;
-  excerpt: string;
-  content: string[];
-  image: string;
-  source?: string;
-  sourceUrl?: string;
-}
-
 export interface GalleryItem {
   id: string;
   title: string;

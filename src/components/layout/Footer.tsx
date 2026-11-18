@@ -7,8 +7,6 @@ import {
   MapPin,
   Phone,
   Mail,
-  Clock,
-  ShieldCheck,
   ArrowRight
 } from "lucide-react";
 
@@ -22,38 +20,6 @@ export default function Footer() {
       <div className="absolute bottom-0 right-10 w-96 h-96 bg-navy-800/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Top Accreditations Showcase */}
-        <div className="pb-12 mb-12 border-b border-white/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-brand-orange flex items-center gap-2 mb-1">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Accredited International Standards</span>
-              </div>
-              <p className="text-sm text-slate-400">
-                Operating under strict international freight conventions, aviation protocols, and certified quality management.
-              </p>
-            </div>
-            {/* Accreditation Badges */}
-            <div className="flex flex-wrap items-center justify-center gap-5 bg-white/5 px-6 py-3 rounded-xl border border-white/10">
-              {companyInfo.accreditations.map((acc) => (
-                <div key={acc.name} className="flex items-center gap-2" title={acc.fullName}>
-                  <div className="relative w-12 h-8 bg-white rounded p-1 flex items-center justify-center overflow-hidden">
-                    <Image
-                      src={acc.logo}
-                      alt={acc.name}
-                      width={48}
-                      height={32}
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                  <span className="text-xs font-bold text-white tracking-wide">{acc.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* 4-Column Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Column 1: Company Profile */}
